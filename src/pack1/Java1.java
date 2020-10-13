@@ -1,32 +1,37 @@
 package pack1;
 
-public class Java1 {
+import ClassesAndConstructors.ClassDemo;
+import FinalAndStatic.StaticMethodDemo;
 
-    public int i1;
-    private double d1;
-    protected char c1;
-    private String str1;
+import static FinalAndStatic.StaticMethodDemo.*;
+//import static FinalAndStatic.StaticMethodDemo.setCollegeName;
 
-    public void display1()
-    {
-        d1=90;
-        System.out.println("i="+i1);
-        System.out.println("d="+d1);
-        System.out.println("c="+c1);
-        System.out.println("str="+str1);
+public class Java1 extends Java2{
+
+    // default access  specifier
+       public int a1;
+        protected double d1;
+       private char c1;
+        String str1;
+
+        void display1()
+        {
+            System.out.println("a="+a1);
+            System.out.println("d="+d1);
+            System.out.println("c="+c1);
+            System.out.println("str="+str1);
+        }
+
+        public static void main(String[] args) {
+
+          /*  Java1 ob = new Java1();
+            ob.a1 =10;
+            ob.c1='h';
+
+            ob.a2=10;*/
+
+            setCollegeName("myCollege");
+
+            System.out.println(college);
     }
-
-    public static void main(String[] args) {
-
-        Java1 ob = new Java1();
-
-        ob.i1 = 45;
-        ob.d1 = 4.5;
-
-        ob.str1 = "amol";
-
-    }
-
 }
-
-

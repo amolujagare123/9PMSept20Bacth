@@ -3,26 +3,27 @@ public class ArrayDemo2 {
     public static void main(String[] args) {
 
 
-        float[] f = new float[5];
+        char[] c = {'h','g','w','t','y','y','g'};
 
-        f[0] = 1.2f ;
-        f[1] = 4.2f ;
-        f[2] = 5.2f ;
-        f[3] = 12.78f ;
-        f[4] = 89.09f ;
+        for(char ch : c)
+        {
+            System.out.println(ch);
+        }
 
-        for(int i=0; i<f.length;i++)
-            System.out.println(f[i]);
+        // strings -- there is a specific
+        // example where we specifically need int i=0 pattern
+
+        double[] d = {2.45,4.56,34,12.6,67.0,78.9};
+
+        for(double d1 : d)
+        {
+            System.out.println(d1);
+        }
 
 
-        char[] c = new char[5];
-        c[0] = 'h';
-        c[1] = 't';
-        c[2] = 'i';
-        c[3] = '4';
-        c[4] = ' ';
 
-        for(int i=0; i<c.length;i++)
-            System.out.println(c[i]);
+
+
+
     }
 }

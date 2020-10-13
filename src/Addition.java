@@ -1,28 +1,19 @@
-class Addition
-{ 
-public static void main(String[] args) 
-{ 
+public class Addition // class name should start with capital letter, use cammel case
+{
 
-int a = 5 ;
-int b = 7 ;
-int c ;
+public static void main(String[] args)
+{
 
-c = a + b;
+int a =10;
+int b =20;
 
-System.out.println("Addition is="+c);   // dont use double quotes
+int add ;
 
-} 
+add = a+b;
+
+System.out.println("addition:"+add);
+
 
 }
 
-/* homework
-
-write a program for
-
-1. substraction
-2. multiplication
-3. division 
-
-operations 
-
-*/
+}
